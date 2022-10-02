@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+    
+        <header>
+          <h1>Kado Hotel</h1>
+        </header>
+        <section class="main-part">
+          <div>
+          <p class="bill">Bill</p>
+          <input type="text" class="amount-bill" />
+          <!-- <p class = "amount-without-tip"></p> -->
+
+          <p class="tip-percentage">Select Tip %</p>
+          <ul class="lists">
+            <li class="item one">5%</li>
+            <li class="item two">10%</li>
+            <li class="item three">15%</li>
+            <li class="item four">25%</li>
+            <li class="item five">50%</li>
+            <li class="item six">
+              <input class="special" type="text" placeholder="Custom"/>
+            </li>
+          </ul>
+          <p class="people-there">Number of People</p>
+          <input type="text" class="btn-people" />
+          <!-- <p class="number-of-people"></p> -->
+        </div>
+        
+          <div class="lower">
+            <div class="lower-flex">
+              <div class="first-section">
+                <p class="total-p">Tip Amount</p>
+                <p class="together">/person</p>
+              </div>
+              <p class="tip-amount"></p>
+            </div>
+            <div class="lower-flex">
+              <div class="second-section">
+                <p class="total-p">Total</p>
+                <p class="together">/person</p>
+              </div>
+              <p class="total-amount"></p>
+            </div>
+
+            <button type="reset" class="reset">Reset</button>
+         </div>
+        
+      </section>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+:root {
+  --primary-color: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsla(183, 100%, 15%, 0.9);
+  --dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+}
+body {
+  background-color: var(--light-grayish-cyan);
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+h1 {
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  text-align: center;
+  padding: 0 95px;
+  color: var(--dark-cyan);
+}
+.main-part {
+  background-color: white;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  padding-left: 1.4rem;
+}
+.bill {
+  color: var(--grayish-cyan);
+  padding-top: 1rem;
+  margin-bottom: 4px;
+}
+.amount-bill {
+  border: none;
+  width: 90%;
+  height: 2.4rem;
+  border-radius: 6px;
+  background-color: var(--very-light-grayish-cyan);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./images/istockphoto-1151557689-170667a.jpg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  color: var(--dark-cyan);
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.tip-percentage {
+  color: var(--grayish-cyan);
+  margin-bottom: 6px;
+}
+
+.lists {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 40px);
+  gap: 10px;
+  text-align: center;
+  margin-right: 2rem;
+  padding-left: 0;
+  list-style: none;
+  font-size: 1.2rem;
+}
+.item {
+  cursor: pointer;
+  padding: 5px 0;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.one,
+.two,
+.four,
+.five {
+  background-color: var(--very-dark-cyan);
+  color: white;
+}
+.three {
+  background-color: var(--primary-color);
+}
+.six {
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--very-dark-cyan);
+}
+.special {
+  border: none;
+  padding: 5px 0;
+  background-color: var(--very-light-grayish-cyan);
+  letter-spacing: 1.1px;
+  text-align: center;
+  color: var(--very-dark-cyan);
+}
+.people-there {
+  color: var(--grayish-cyan);
+  padding-top: 1rem;
+  margin-bottom: 4px;
+}
+.btn-people {
+  border: none;
+  width: 90%;
+  height: 2.4rem;
+  border-radius: 6px;
+  background-color: var(--very-light-grayish-cyan);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background-image: url(./images/people-icon-person-vector-sign-260nw-673520785.webp);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  color: var(--dark-cyan);
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.lower {
+  background-color: var(--very-dark-cyan);
+  color: white;
+}
+.together {
+  margin-top: 0;
+  color: var(--dark-grayish-cyan);
+}
+.total-p {
+  margin-bottom: 0;
+}
+.lower {
+  height: 250px;
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.lower-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.tip-amount,
+.total-amount {
+  color: var(--primary-color);
+  font-size: 1.7rem;
+}
+.reset {
+  background-color: var(--primary-color);
+  width: 90%;
+  margin-left: 14px;
+  padding: 7px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 600px) {
+  .main-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lower {
+    height: 400px;
+  }
+  .reset {
+    margin-top: 170px;
+  }
+  .lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
